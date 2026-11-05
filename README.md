@@ -5,6 +5,7 @@ A Claude Code agent that vets a blog keyword before you write. It runs 5 keyword
 ## What's inside
 - `agents/seo-keyword-scout.md`: the agent
 - `docs/SEO-CHECKLIST.md`: the full SEO + AEO checklist the agent follows
+- `docs/AEO-NOTES.md`: how to get cited by AI assistants (query fan-out, brand gaps, mentions, YouTube, AI crawlers, measurement)
 
 ## Install
 
@@ -14,6 +15,7 @@ Copy into your project:
 ```
 your-project/.claude/agents/seo-keyword-scout.md
 your-project/docs/SEO-CHECKLIST.md
+your-project/docs/AEO-NOTES.md
 your-project/.mcp.json            (Firecrawl, see step 3)
 ```
 
