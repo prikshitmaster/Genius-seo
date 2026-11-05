@@ -136,6 +136,22 @@ export FIRECRAWL_API_KEY="fc-..."      # macOS / Linux
 | `/genius-seo:setup [source]` | Connect Search Console, GA4, Bing, PageSpeed/CrUX, Moz, Firecrawl |
 </details>
 
+## Research-backed
+
+<p align="center">
+  <img src="assets/research.svg" alt="Google, Bing, Ahrefs, Semrush and NN/g research feeds the genius-seo core, which outputs: rank in Google, get cited by AI, convert to clients" width="100%">
+</p>
+
+Genius SEO follows what Google, Microsoft, Ahrefs, Semrush and Nielsen Norman Group actually publish, with primary sources, quotes and dates in every guide. A few things it knows that most SEO advice gets wrong:
+
+- **Google says to ignore the "AEO hacks":** llms.txt, "chunking" content, AI-only rewrites, chasing fake mentions. People-first, non-commodity content wins on Google *and* Copilot.
+- **A page for every query variation is spam** (doorway and scaled-content policies). One strong page per intent wins, especially since Google shows at most ~2 results per site.
+- **AI Overviews take ~58% of #1's clicks** (Ahrefs, Dec 2025 data), so for informational queries the goal becomes being *cited*, not just ranked.
+- **YouTube and brand mentions predict AI visibility** more than domain authority (Ahrefs, 75k brands).
+- **AI-search visitors convert 4.4× better** than organic visitors (Semrush), so small AI traffic matters.
+- **Only 1.74% of new pages reach the top 10 within a year** (Ahrefs), so it plans for winnable long-tail topics and same-week distribution, and never promises traffic.
+- **Core update drop?** It follows Google's recovery steps: no quick fixes, and deleting content is the last resort.
+
 ## How it works
 
 **Keyword vetting: 6 checks, every time**
@@ -149,9 +165,11 @@ export FIRECRAWL_API_KEY="fc-..."      # macOS / Linux
 | 5 | Can you compete? | More backlinks? Similar authority? More topical authority? Something better to offer? |
 | 6 | AI filter | Can AI answer it with no click? Then aim for a brand mention instead |
 
-**Writing rules:** bottom line up front · atomic sections · entity-rich · simple declarative sentences · fresh · one CTA.
+**Writing rules:** answer first · self-contained sections · specific and entity-rich · simple sentences · original, first-hand value · sourced and dated · one CTA.
 
-**AEO levers:** content on your site · mentions on other sites · YouTube · technical access for AI crawlers.
+**AEO levers:** non-commodity content on your site · genuine mentions on other sites · YouTube · crawlable HTML for AI crawlers · Search Console Generative AI + Bing AI Performance to measure.
+
+**Conversion:** one service link in the body · one free resource · one primary CTA · leads tracked per post.
 
 <details>
 <summary><b>What's inside the plugin</b></summary>
@@ -164,6 +182,7 @@ export FIRECRAWL_API_KEY="fc-..."      # macOS / Linux
 | `skills/genius-seo/references/seo-checklist.md` | Keyword checks, on-page, links, technical |
 | `skills/genius-seo/references/aeo-notes.md` | Query fan-out, brand gaps, citation levers, measurement |
 | `skills/genius-seo/references/setup.md` | Connecting free data sources |
+| `skills/genius-seo/references/google-playbook.md` | How Google ranks, from its own docs: ranking systems, people-first self-assessment and E-E-A-T, core-update recovery, full spam list, links, titles, Core Web Vitals |
 | `skills/genius-seo/references/research-2026.md` | Latest findings from Google, Microsoft/Bing, Ahrefs, Semrush and NN/g, plus the AEO myths Google says to ignore |
 | `skills/genius-seo/references/conversion.md` | Turning readers into clients: CTA ladder, trust, lead capture, measurement, pre-publish checklist |
 | `skills/genius-seo/references/content-velocity.md` | Publishing at volume safely: scaled-content spam rules, fact-check limits, cannibalization, real time-to-rank data |
@@ -188,6 +207,7 @@ Setup steps: [`references/setup.md`](skills/genius-seo/references/setup.md) or `
 
 ## Rules it follows
 
+- Follows Google's spam policies: no doorway pages, scaled content, link schemes or fake freshness.
 - Never invents numbers; missing data is "unknown", and it names the tool that would answer it.
 - Every published statistic needs a checkable source; regulated topics (immigration, legal, medical, finance) use official sources only.
 - Never publishes, deploys, pushes or sends outreach without your OK.

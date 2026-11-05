@@ -80,9 +80,9 @@ AI answers (ChatGPT, Google AI Overviews) split one prompt into many searches an
 - [ ] Then beat them: fresher facts, clearer steps, first-hand examples.
 
 ### On-page basics
-- [ ] Keyword in the title (under ~60 chars) where it fits naturally, in the H1 and in the first 100 words.
+- [ ] Keyword in the title where it fits naturally (key words in the first ~60 characters; Google truncates but sets no hard limit), in the H1 and in the first 100 words.
 - [ ] Short, descriptive URL slug.
-- [ ] Meta description ~150–160 chars saying what the reader gets.
+- [ ] Meta description: a short, relevant pitch saying what the reader gets (~150–160 characters shows fully; Google may use page text instead).
 - [ ] One H1, clear H2/H3s, short sentences, short paragraphs.
 - [ ] Internal links from other relevant posts to this one, and from this one to the matching service page.
 - [ ] No keyword stuffing, no word-count target.
