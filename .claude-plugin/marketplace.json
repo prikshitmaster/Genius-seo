@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "genius-seo",
+  "description": "SEO + AEO playbook for blogs that turn readers into customers.",
+  "owner": {
+    "name": "prikshitmaster",
+    "url": "https://github.com/prikshitmaster"
+  },
+  "plugins": [
+    {
+      "name": "genius-seo",
+      "description": "Keyword vetting, answer-first writing, AI citations, links, technical checks and measurement.",
+      "source": "./",
+      "category": "marketing"
+    }
+  ]
+}

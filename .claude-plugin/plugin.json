@@ -1,0 +1,12 @@
+{
+  "name": "genius-seo",
+  "version": "1.0.0",
+  "description": "Full SEO + AEO playbook for blogs: keyword vetting (5 checks + AI filter), answer-first writing, AI citation strategy, link and mention building, technical checks, and measurement. Orchestrates claude-blog, claude-seo and Firecrawl.",
+  "author": {
+    "name": "prikshitmaster",
+    "url": "https://github.com/prikshitmaster"
+  },
+  "repository": "https://github.com/prikshitmaster/Genius-seo",
+  "license": "MIT",
+  "keywords": ["seo", "aeo", "geo", "blog", "keyword-research", "ai-search"]
+}
