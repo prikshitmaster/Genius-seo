@@ -10,6 +10,7 @@ Companion to `docs/SEO-CHECKLIST.md`. SEO is the foundation; AEO sits on top.
 ## 1. How AI search works
 
 - **Query fan-out:** one prompt becomes dozens of smaller searches run at once. The AI then combines the results into one answer.
+  - ⚠️ Cover the sub-questions **inside** strong pages and a few distinct supporting posts. Google warns that making separate pages "for every possible variation… (fan-out queries)… primarily to manipulate rankings" violates its spam policies (`research-2026.md`).
   - Example: "help me get a tech job on OPT" might fan out to "OPT unemployment days limit", "STEM OPT eligible degrees", "E-Verify employers list", "OPT resume tips", "best jobs for F-1 students".
   - **So:** rank across a whole topic, not one keyword. Build clusters (pillar post + many supporting posts).
 - **Three things that make citations more likely** *(Ahrefs)*:
@@ -49,7 +50,7 @@ Check where Splendid Tech *should* appear vs. where it *does*, across Google, AI
 
 **Sentence-level rules for every post:**
 1. **BLUF (bottom line up front):** start each section with the answer.
-2. **Atomic sections:** each section makes sense on its own.
+2. **Self-contained sections:** each section makes sense on its own, for skimming readers. Google says no artificial "chunking" is needed; Microsoft says clear, self-contained answers help Copilot. Write for people first.
 3. **Entity-rich:** "USCIS Form I-765 for the 24-month STEM OPT extension", not "the form".
 4. **Simple and declarative:** one idea per sentence, subject-verb-object. If it needs two reads, simplify it.
 

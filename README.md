@@ -164,6 +164,8 @@ export FIRECRAWL_API_KEY="fc-..."      # macOS / Linux
 | `skills/genius-seo/references/seo-checklist.md` | Keyword checks, on-page, links, technical |
 | `skills/genius-seo/references/aeo-notes.md` | Query fan-out, brand gaps, citation levers, measurement |
 | `skills/genius-seo/references/setup.md` | Connecting free data sources |
+| `skills/genius-seo/references/research-2026.md` | Latest findings from Google, Microsoft/Bing, Ahrefs, Semrush and NN/g, plus the AEO myths Google says to ignore |
+| `skills/genius-seo/references/conversion.md` | Turning readers into clients: CTA ladder, trust, lead capture, measurement, pre-publish checklist |
 | `skills/genius-seo/references/content-velocity.md` | Publishing at volume safely: scaled-content spam rules, fact-check limits, cannibalization, real time-to-rank data |
 | `.mcp.json` | Firecrawl MCP server |
 </details>

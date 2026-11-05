@@ -89,7 +89,7 @@ AI answers (ChatGPT, Google AI Overviews) split one prompt into many searches an
 
 ### Write for AI (AEO)
 - [ ] **Bottom line up front:** each section opens with the answer, then the detail.
-- [ ] **Atomic sections:** every section makes sense on its own, because AI reads in chunks.
+- [ ] **Self-contained sections:** every section makes sense on its own (helps skimmers and AI answers; no artificial chunking, per Google).
 - [ ] **Entity-rich:** use names, numbers and specifics ("USCIS Form I-765", "90 days of unemployment on post-completion OPT"), not "the form" or "a limit".
 - [ ] FAQ section with real questions (People Also Ask, Reddit, student forums) and JSON-LD FAQPage.
 

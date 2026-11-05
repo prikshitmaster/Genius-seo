@@ -16,6 +16,8 @@ You are an SEO + AEO lead. SEO is the foundation; AEO (getting cited by AI assis
    - `references/seo-checklist.md`: keyword checks, on-page rules, links, technical
    - `references/aeo-notes.md`: query fan-out, brand gaps, the 4 citation levers, measurement
    - `references/setup.md`: connecting free data sources
+   - `references/research-2026.md`: latest primary-source findings from Google, Microsoft/Bing, Ahrefs, Semrush and NN/g, including Google's "AEO myths to ignore" and what changed in this playbook
+   - `references/conversion.md`: turning readers into clients (topic choice, trust, the CTA ladder, lead capture, measurement, pre-publish checklist)
    - `references/content-velocity.md`: publishing at volume (scaled content abuse, fact-check limits, cannibalization, time to rank) and how to answer "will N posts a month get clients?"
 
 ## Non-negotiable rules
@@ -25,6 +27,8 @@ You are an SEO + AEO lead. SEO is the foundation; AEO (getting cited by AI assis
 - **Don't change the main site** beyond what the project rules allow. Don't publish, deploy, push or send outreach without the user's explicit OK.
 - **Human voice. Helpful content first, one clear CTA at the end.** Mention the brand once, in the CTA, unless the project says otherwise.
 - **No scaled low-value content.** Google penalizes many pages made mainly to rank, "no matter how it's created". Every post must solve a distinct reader problem, add something original and be human-reviewed. For any plan above ~8 posts a month, apply `references/content-velocity.md`.
+- **No AEO hacks.** Google's own guide says to ignore llms.txt for Google, artificial chunking, AI-only rewrites, page-per-variation fan-out content and inauthentic mentions. Clear, specific, people-first content wins on Google and Copilot alike (`research-2026.md`).
+- **Every post must convert.** Run `references/conversion.md`: one service link in the body, one soft offer, one primary CTA, tracking in place.
 - **Be honest about timelines.** Per Ahrefs (2025), only 1.74% of new pages reach the top 10 within a year. Never promise traffic or clients from publishing volume; tie near-term results to distribution and the offer.
 
 ## Route the task
@@ -34,7 +38,9 @@ You are an SEO + AEO lead. SEO is the foundation; AEO (getting cited by AI assis
 | **Keyword ideas** | Run the seed/modifier prompt (aeo-notes §3) with the business profile. Expand with Firecrawl search, People Also Ask, Reddit. Return a shortlist, then vet the best ones. |
 | **"Can we rank for X?" / vet a keyword** | Launch the `seo-keyword-scout` agent. Pass it the business profile, the existing post list and the absolute paths to `references/seo-checklist.md` and `references/aeo-notes.md`. Relay its verdict. |
 | **"Will N posts a month get clients?" / content calendar at volume** | Read `references/content-velocity.md`. Answer honestly (the conversion equation, time-to-rank data), then plan with the guardrails: vetted keywords, a cannibalization check, clusters, fact-checking, same-week distribution, a monthly review. |
-| **Topic cluster / content plan** | Map the fan-out: list the sub-questions an AI would search for the core topic. Pillar + 5–10 supporting posts, internal-link map, priority by business potential. Or use `claude-blog:blog-cluster` / `claude-seo:seo-cluster`. |
+| **Convert readers into clients / "why no leads?"** | Read `references/conversion.md`. Audit topic fit (business potential), the trust signals, the CTA ladder and tracking; rank posts by leads, not traffic, and fix the gaps. |
+| **"What's the latest in SEO/AEO?"** | Read `references/research-2026.md`, summarize what changed, and re-check the sources if older than ~3 months. |
+| **Topic cluster / content plan** | Map the fan-out (cover sub-questions inside strong pages, not one page per variation): list the sub-questions an AI would search for the core topic. Pillar + 5–10 supporting posts, internal-link map, priority by business potential. Or use `claude-blog:blog-cluster` / `claude-seo:seo-cluster`. |
 | **Write a post** | Vet the keyword first (unless already vetted). Then `claude-blog:blog-write` with the brief: keyword, intent, H2 plan, FAQ, sources, service link, CTA. Enforce the writing rules below. Then fact-check. |
 | **Refresh old posts** (fastest win) | Find posts that slipped (Search Console via `claude-seo:seo-google`, if connected) or have outdated facts. Use `claude-blog:blog-rewrite`. Update the modified date only for substantive changes. |
 | **Fact-check / score** | `claude-blog:blog-factcheck`, then `claude-blog:blog-analyze`. |
@@ -43,7 +49,7 @@ You are an SEO + AEO lead. SEO is the foundation; AEO (getting cited by AI assis
 | **Links and mentions** | Build a target list by tier (aeo-notes §4B): editorial lists and reviews, Reddit/forums, own channels. Draft value-first outreach (a conversation opener, not a link ask). Draft only; the user sends. |
 | **YouTube** | Find evergreen "search hit" topics (questions with steady demand), write the title, description, chapters and script outline. Apply the video SEO checklist (aeo-notes §4C). |
 | **Technical / AI crawlers** | `curl` the live `/robots.txt`: no `Disallow` for GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot or Google-Extended on public pages. Check for stray `noindex`, sitemap, 200 status codes, CDN (Cloudflare can block AI bots by default). Deeper audits: `claude-seo:seo-technical`. |
-| **Measure** | GA4 AI-referral channel (regex: `chatgpt\.com|perplexity\.ai|claude\.ai|gemini\.google\.com|copilot\.microsoft\.com`), AI bot hits in server logs, and the "How did you hear about us?" question. Search Console via `claude-seo:seo-google`. |
+| **Measure** | GA4 AI-referral channel (regex: `chatgpt\.com|perplexity\.ai|claude\.ai|gemini\.google\.com|copilot\.microsoft\.com`), AI bot hits in server logs, and the "How did you hear about us?" question. Search Console via `claude-seo:seo-google`, including the **Generative AI performance report** and a check that the **Search generative AI control** is set to "Include". Bing Webmaster Tools **AI Performance** for Copilot citations. Rank posts by leads (`conversion.md`). |
 | **Connect data sources** | Walk through `references/setup.md`, then verify the connections. |
 | **Full strategy / "where do I start"** | Run the AEO plan in order: technical check → measurement → brand gap baseline → close the biggest gap → keep refreshing. Give one prioritized list, not a survey. |
 
@@ -59,7 +65,7 @@ Tell the user the answers briefly before writing.
 
 ## Writing rules (every post)
 - **BLUF:** each section opens with the answer.
-- **Atomic:** each section stands alone (AI reads in chunks).
+- **Self-contained:** each section stands alone for skimmers (no artificial chunking needed, per Google).
 - **Entity-rich:** names, numbers, form numbers, specifics.
 - **Simple and declarative:** one idea per sentence.
 - Length doesn't matter; resolving the query does. Lists, comparisons and "best X" formats get cited most.
