@@ -2,6 +2,12 @@
   <title id="t">genius-seo</title>
   <desc id="d">SEO and AEO plugin for Claude Code. Rank in Google, get cited by AI. Pixel crawler bots walk across while a magnifier scans Google, ChatGPT, YouTube and Reddit.</desc>
   <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#040b08"/><stop offset=".65" stop-color="#08190f"/><stop offset="1" stop-color="#0d2c20"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#3ee6b0" stroke-opacity=".055"/></pattern>
+    <radialGradient id="vig" cx="50%" cy="45%" r="75%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/></radialGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f2fff8"/><stop offset=".6" stop-color="#d9ffc0"/><stop offset="1" stop-color="#b6f23c"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="1.3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <symbol id="bot" viewBox="0 0 32 32">
       <rect x="14" y="0" width="4" height="4" fill="currentColor"/>
       <rect x="4" y="4" width="24" height="16" fill="currentColor"/>
@@ -45,7 +51,9 @@
     </rect></clipPath>
   </defs>
 
-  <rect width="1200" height="420" fill="#07120e"/>
+  <rect width="1200" height="420" fill="url(#sky)"/>
+  <rect width="1200" height="420" fill="url(#grid)"/>
+  <rect width="1200" height="420" fill="url(#vig)"/>
 
   <!-- stars -->
   <g fill="#9fe6c4">
@@ -60,8 +68,8 @@
 
   <!-- left: title block -->
   <text x="56" y="62" class="mono" font-size="12" letter-spacing="3" fill="#b6f23c">SEO + AEO PLUGIN FOR CLAUDE CODE</text>
-  <text x="54" y="128" class="sans" font-size="62" font-weight="800" fill="#eafff4">genius-seo</text>
-  <g transform="translate(392,86)" fill="#b6f23c">
+  <text x="54" y="128" class="sans" font-size="62" font-weight="800" fill="url(#ink)" filter="url(#soft)">genius-seo</text>
+  <g transform="translate(392,86)" fill="#b6f23c" filter="url(#glow)">
     <rect x="12" y="0" width="6" height="30"/><rect x="0" y="12" width="30" height="6"/>
     <rect x="4" y="4" width="5" height="5"/><rect x="21" y="4" width="5" height="5"/>
     <rect x="4" y="21" width="5" height="5"/><rect x="21" y="21" width="5" height="5"/>
@@ -95,7 +103,7 @@
     <rect width="210" height="132" rx="4" fill="#0d2019" stroke="#3ee6b0" stroke-width="2"/>
     <text x="14" y="24" class="mono" font-size="11" letter-spacing="2" fill="#3ee6b0">AI ANSWER</text>
     <g fill="#2c5a47"><rect x="14" y="38" width="180" height="6"/><rect x="14" y="52" width="160" height="6"/><rect x="14" y="66" width="170" height="6"/></g>
-    <rect class="glow" x="14" y="88" width="152" height="26" rx="3" fill="#b6f23c"/>
+    <rect class="glow" filter="url(#glow)" x="14" y="88" width="152" height="26" rx="3" fill="#b6f23c"/>
     <text x="24" y="105" class="mono" font-size="12" font-weight="700" fill="#07120e">[1] yourbrand.com</text>
   </g>
   <path class="link" d="M696 190 L760 110" stroke="#3ee6b0" stroke-width="2" fill="none"/>
@@ -119,7 +127,7 @@
   </g>
 
   <!-- scanning magnifier -->
-  <g class="lens">
+  <g class="lens" filter="url(#soft)">
     <circle class="ping" cx="17" cy="17" r="26" fill="none" stroke="#b6f23c" stroke-width="2"/>
     <circle cx="17" cy="17" r="21" fill="#b6f23c" fill-opacity=".12" stroke="#ffb020" stroke-width="5"/>
     <rect x="33" y="33" width="8" height="20" fill="#ffb020" transform="rotate(-45 37 43)"/>
