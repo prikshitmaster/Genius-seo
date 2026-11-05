@@ -16,6 +16,7 @@ You are an SEO + AEO lead. SEO is the foundation; AEO (getting cited by AI assis
    - `references/seo-checklist.md`: keyword checks, on-page rules, links, technical
    - `references/aeo-notes.md`: query fan-out, brand gaps, the 4 citation levers, measurement
    - `references/setup.md`: connecting free data sources
+   - `references/blog-writing.md`: world-class post writing: how people read (NN/g), the inverted pyramid, plain language, the anatomy of a perfect post, retention vs GA4 bounce, the 12-step process, and the 100-point pre-publish test
    - `references/google-playbook.md`: how Google ranks, from its official docs: the named ranking systems, the people-first self-assessment and E-E-A-T, core-update recovery, the full spam list, links, titles and snippets, Core Web Vitals, and an expert priority order
    - `references/research-2026.md`: latest primary-source findings from Google, Microsoft/Bing, Ahrefs, Semrush and NN/g, including Google's "AEO myths to ignore" and what changed in this playbook
    - `references/conversion.md`: turning readers into clients (topic choice, trust, the CTA ladder, lead capture, measurement, pre-publish checklist)
@@ -44,8 +45,9 @@ You are an SEO + AEO lead. SEO is the foundation; AEO (getting cited by AI assis
 | **Quality / E-E-A-T review of a page** | Run the people-first self-assessment and Who/How/Why in `google-playbook.md` §2; flag fake-freshness, missing bylines, unsourced claims, thin or commodity content. |
 | **"What's the latest in SEO/AEO?"** | Read `references/research-2026.md`, summarize what changed, and re-check the sources if older than ~3 months. |
 | **Topic cluster / content plan** | Map the fan-out (cover sub-questions inside strong pages, not one page per variation): list the sub-questions an AI would search for the core topic. Pillar + 5–10 supporting posts, internal-link map, priority by business potential. Or use `claude-blog:blog-cluster` / `claude-seo:seo-cluster`. |
-| **Write a post** | Vet the keyword first (unless already vetted). Then `claude-blog:blog-write` with the brief: keyword, intent, H2 plan, FAQ, sources, service link, CTA. Enforce the writing rules below. Then fact-check. |
+| **Write a post** | Follow `references/blog-writing.md` (anatomy + process) and score it with its 100-point pre-publish test (publish at 85+). Vet the keyword first (unless already vetted). Then `claude-blog:blog-write` with the brief: keyword, intent, H2 plan, FAQ, sources, service link, CTA. Enforce the writing rules below. Then fact-check. |
 | **Refresh old posts** (fastest win) | Find posts that slipped (Search Console via `claude-seo:seo-google`, if connected) or have outdated facts. Use `claude-blog:blog-rewrite`. Update the modified date only for substantive changes. |
+| **Review an existing post / "why do readers bounce?"** | Score it with the `blog-writing.md` pre-publish test and the retention table; check GA4 engaged sessions (>10 s, key event or 2+ pages) per post; list the top fixes. |
 | **Fact-check / score** | `claude-blog:blog-factcheck`, then `claude-blog:blog-analyze`. |
 | **On-page / schema check** | `claude-seo:seo-page <url>`, `claude-seo:seo-schema`. |
 | **Get cited by AI / brand gap** | Run the free brand-gap check (aeo-notes §2): ask the prompts clients would ask and record who is named and cited. Classify gaps (missed citation, competitor, topic) and pick the biggest. `claude-seo:seo-geo` for a citability audit. |

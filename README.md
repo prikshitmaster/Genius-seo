@@ -150,6 +150,8 @@ Genius SEO follows what Google, Microsoft, Ahrefs, Semrush and Nielsen Norman Gr
 - **YouTube and brand mentions predict AI visibility** more than domain authority (Ahrefs, 75k brands).
 - **AI-search visitors convert 4.4× better** than organic visitors (Semrush), so small AI traffic matters.
 - **Only 1.74% of new pages reach the top 10 within a year** (Ahrefs), so it plans for winnable long-tail topics and same-week distribution, and never promises traffic.
+- **79% of readers scan, only 16% read word by word** (NN/g). Concise + scannable + objective writing raised usability **124%**, so every post is answer-first, scannable and hype-free.
+- **Human-edited posts with 2–3 visuals and original research win** (Orbit Media 2026). AI use alone "correlates with nothing", so every post is human-reviewed and scored before publishing.
 - **Core update drop?** It follows Google's recovery steps: no quick fixes, and deleting content is the last resort.
 
 ## How it works
@@ -182,6 +184,7 @@ Genius SEO follows what Google, Microsoft, Ahrefs, Semrush and Nielsen Norman Gr
 | `skills/genius-seo/references/seo-checklist.md` | Keyword checks, on-page, links, technical |
 | `skills/genius-seo/references/aeo-notes.md` | Query fan-out, brand gaps, citation levers, measurement |
 | `skills/genius-seo/references/setup.md` | Connecting free data sources |
+| `skills/genius-seo/references/blog-writing.md` | World-class blog writing: how people read, inverted pyramid, plain language, perfect-post anatomy, retention, 100-point pre-publish test |
 | `skills/genius-seo/references/google-playbook.md` | How Google ranks, from its own docs: ranking systems, people-first self-assessment and E-E-A-T, core-update recovery, full spam list, links, titles, Core Web Vitals |
 | `skills/genius-seo/references/research-2026.md` | Latest findings from Google, Microsoft/Bing, Ahrefs, Semrush and NN/g, plus the AEO myths Google says to ignore |
 | `skills/genius-seo/references/conversion.md` | Turning readers into clients: CTA ladder, trust, lead capture, measurement, pre-publish checklist |
